@@ -1,18 +1,25 @@
+## 🚀 SnapSwift: Supercharge Your Image Scraping Experience!
+---
 
-## SnapSwift: Accelerating Your Image Scraping Experience!
-<hr>
+SnapSwift is your go-to Python library for effortlessly downloading bulk images from Bing.com. Leveraging asynchronous URL requests, SnapSwift ensures blazing-fast downloads, making image scraping a breeze.
 
-Python library to download bulk of images form Bing.com. This package uses async url, which makes it very fast while downloading.<br/>
-
-This SnapSwift is an extension of Bing Image Downloader by https://github.com/gurugaurav/bing_image_downloader/tree/master, you can access form this link here.
+This library builds upon the foundation of the renowned Bing Image Downloader by [Gurugaurav](https://github.com/gurugaurav/bing_image_downloader), offering enhanced functionalities and performance. Unlike its predecessors, SnapSwift focuses solely on fetching images in JPG format, perfect for constructing image datasets. 
 
 
-### Disclaimer<br />
+### 😱 Features
 
-This program lets you download tons of images from Bing.
-Please do not download or use any image that violates its copyright terms. 
+1. **Multi-Class Downloading**: SnapSwift allows users to download images belonging to multiple classes or categories simultaneously. This feature enables users to scrape images for diverse topics or themes in a single operation, streamlining the process of gathering data for various projects.
 
-### How to Use <br />
+2. **Exclusive JPG Format Downloading**: SnapSwift exclusively downloads images in JPG format. By focusing solely on JPG images, SnapSwift ensures that users obtain consistent file types, simplifying the management and processing of downloaded images for building datasets or other applications.
+
+
+### 📝 Disclaimer
+
+SnapSwift empowers you to download a plethora of images from Bing. However, it's crucial to respect copyright terms and permissions. Please refrain from downloading or using any image that violates its copyright terms.
+
+### 💻 How to Use
+
+To get started with SnapSwift, follow these simple steps:
 
 ```bash
 git clone https://github.com/REDDITARUN/Snap_Swift.git
@@ -20,22 +27,24 @@ cd Snap_Swift
 pip install .
 ```
 
+### 🛠️ Usage
 
+Customize your image scraping parameters in the `test.py` file to suit your needs. Specify your desired queries, limit, output directory, and more to tailor the scraping process to your requirements.
 
-### Usage <br />
+#### Parameters:
 
-Go to the test.py file and make your modifications, like which photoes you want put the tags in query, and limit and etc etc. for images on single topic you can put in `queries = ["lambo"]` if you need multiple quiries to be searched then you can keep `queries = ["iphone", "Samsung"]`. 
+- `query_string`: String to be searched.
+- `limit`: (optional, default is 100) Number of images to download.
+- `output_dir`: (optional, default is 'dataset') Name of the output directory.
+- `adult_filter_off`: (optional, default is True) Enable or disable adult content filtration.
+- `force_replace`: (optional, default is False) Delete the folder if present and start a fresh download.
+- `timeout`: (optional, default is 60) Timeout for connection in seconds.
+- `filter`: (optional, default is "") Specify the type of images to filter, choose from [line, photo, clipart, gif, transparent].
+- `verbose`: (optional, default is True) Enable verbose output messages during the download process.
 
-`query_string` : String to be searched.<br />
-`limit` : (optional, default is 100) Number of images to download.<br />
-`output_dir` : (optional, default is 'dataset') Name of output dir.<br />
-`adult_filter_off` : (optional, default is True) Enable of disable adult filteration.<br />
-`force_replace` : (optional, default is False) Delete folder if present and start a fresh download.<br />
-`timeout` : (optional, default is 60) timeout for connection in seconds.<br />
-`filter` : (optional, default is "") filter, choose from [line, photo, clipart, gif, transparent]<br />
-`verbose` : (optional, default is True) Enable downloaded message.<br />
+---
 
+**References:**
 
-
-
-
+- [SnapSwift Repository](https://github.com/REDDITARUN/Snap_Swift)
+- [Bing Image Downloader by Gurugaurav](https://github.com/gurugaurav/bing_image_downloader/tree/master)
