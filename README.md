@@ -2,8 +2,9 @@
 ## SnapSwift: Accelerating Your Image Scraping Experience!
 <hr>
 
-Python library to download bulk of images form Bing.com.
-This package uses async url, which makes it very fast while downloading.<br/>
+Python library to download bulk of images form Bing.com. This package uses async url, which makes it very fast while downloading.<br/>
+
+This SnapSwift is an extension of Bing Image Downloader by https://github.com/gurugaurav/bing_image_downloader/tree/master, you can access form this link here.
 
 
 ### Disclaimer<br />
@@ -14,18 +15,16 @@ Please do not download or use any image that violates its copyright terms.
 ### How to Use <br />
 
 ```bash
-git clone 
-cd bing_image_downloader
+git clone https://github.com/REDDITARUN/Snap_Swift.git
+cd Snap_Swift
 pip install .
 ```
 
 
 
 ### Usage <br />
-```python
-from bing_image_downloader import downloader
-downloader.download(query_string, limit=100,  output_dir='dataset', adult_filter_off=True, force_replace=False, timeout=60, verbose=True)
-```
+
+Go to the test.py file and make your modifications, like which photoes you want put the tags in query, and limit and etc etc. for images on single topic you can put in `queries = ["lambo"]` if you need multiple quiries to be searched then you can keep `queries = ["iphone", "Samsung"]`. 
 
 `query_string` : String to be searched.<br />
 `limit` : (optional, default is 100) Number of images to download.<br />
@@ -37,7 +36,6 @@ downloader.download(query_string, limit=100,  output_dir='dataset', adult_filter
 `verbose` : (optional, default is True) Enable downloaded message.<br />
 
 
-You can also test the programm by runnning `test.py keyword`
 
 
 
