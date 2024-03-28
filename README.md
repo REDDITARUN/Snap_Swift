@@ -29,7 +29,7 @@ pip install .
 
 ### 🛠️ Usage
 
-Customize your image scraping parameters in the `test.py` file to suit your needs. Specify your desired queries, limit, output directory, and more to tailor the scraping process to your requirements.
+Customize your image scraping parameters in the `runner.py` file to suit your needs. Specify your desired queries, limit, output directory, and more to tailor the scraping process to your requirements.
 
 #### Parameters:
 
