@@ -27,9 +27,12 @@ cd Snap_Swift
 pip install .
 ```
 
+
 ### 🛠️ Usage
 
 Customize your image scraping parameters in the `runner.py` file to suit your needs. Specify your desired queries, limit, output directory, and more to tailor the scraping process to your requirements.
+
+For more information and detailed insights, read our article on Medium: ["Stop Wasting Time Scraping Images! Get SnapSwift, Your Python Bing Downloader](https://medium.com/@teendifferent/stop-wasting-time-scraping-images-get-snapswift-your-python-bing-downloader-dc7ac9e2c6c7)".
 
 #### Parameters:
 
